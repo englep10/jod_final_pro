@@ -1,4 +1,5 @@
 Myapp::Application.routes.draw do
+  devise_for :users
   resources :jets
 
   get "home/index"
