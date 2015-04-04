@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @jet.title %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @jet.make %>
+</p>
+
+<p>
+  <strong>Jet model:</strong>
+  <%= @jet.jet_model %>
+</p>
+
+<p>
+  <strong>Serial number:</strong>
+  <%= @jet.serial_number %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @jet.year %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @jet.price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @jet.description %>
+</p>
+
+<%= link_to 'Edit', edit_jet_path(@jet) %> |
+<%= link_to 'Back', jets_path %>

@@ -1,4 +1,6 @@
 Myapp::Application.routes.draw do
+  resources :jets
+
   get "home/index"
   get "home/minor"
   # The priority is based upon order of creation: first created -> highest priority.

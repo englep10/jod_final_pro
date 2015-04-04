@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  make: MyString
+  jet_model: MyString
+  serial_number: MyString
+  year: MyString
+  price: MyString
+  description: MyText
+
+two:
+  title: MyString
+  make: MyString
+  jet_model: MyString
+  serial_number: MyString
+  year: MyString
+  price: MyString
+  description: MyText

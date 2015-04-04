@@ -42,3 +42,10 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'pry-rails'
+gem 'devise'
+gem 'httparty'
+# gem 'cocoon'
+gem 'simple_form'
+# gem 'paperclip'

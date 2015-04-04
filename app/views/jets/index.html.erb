@@ -1,0 +1,39 @@
+<h1>Listing jets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Make</th>
+      <th>Jet model</th>
+      <th>Serial number</th>
+      <th>Year</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jets.each do |jet| %>
+      <tr>
+        <td><%= jet.title %></td>
+        <td><%= jet.make %></td>
+        <td><%= jet.jet_model %></td>
+        <td><%= jet.serial_number %></td>
+        <td><%= jet.year %></td>
+        <td><%= jet.price %></td>
+        <td><%= jet.description %></td>
+        <td><%= link_to 'Show', jet %></td>
+        <td><%= link_to 'Edit', edit_jet_path(jet) %></td>
+        <td><%= link_to 'Destroy', jet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Jet', new_jet_path %>
