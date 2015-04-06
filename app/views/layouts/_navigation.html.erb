@@ -28,12 +28,11 @@
                 <i class="fa fa-desktop"></i> <span class="nav-label">Minor page</span>
                 <% end %>
             </li>
-            <li class="<%= 'active' if current_page?('/users/sign_out') %>">
-                <%= link_to "/users/sign_out" do %>
-                <i class="fa fa-desktop"></i> <span class="nav-label">Sign Out</span>
+            <li class="<%= 'active' if current_page?('/user') %>">
+                <%= link_to "/home/minor" do %>
+                <i class="fa fa-desktop"></i> <span class="nav-label">Minor page</span>
                 <% end %>
             </li>
         </ul>
-
     </div>
 </nav>
