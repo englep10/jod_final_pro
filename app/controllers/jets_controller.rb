@@ -13,6 +13,7 @@ class JetsController < ApplicationController
    # end
   end
 
+
   # GET /jets/1
   # GET /jets/1.json
   def show

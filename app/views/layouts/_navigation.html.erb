@@ -24,8 +24,8 @@
                 <% end %>
             </li>
             <li class="<%= 'active' if current_page?('/jets') %>">
-                <%= link_to "/jets" do %>
-                <i class="fa fa-desktop"></i> <span class="nav-label">All Jets</span>
+                <%= link_to "/jets/my_jets" do %>
+                <i class="fa fa-desktop"></i> <span class="nav-label">My Jets</span>
                 <% end %>
             </li>
             <li class="<%= 'active' if current_page?('/jets/new') %>">

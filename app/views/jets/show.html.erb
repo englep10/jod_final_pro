@@ -32,11 +32,12 @@
 
 <p>
   <strong>Description:</strong>
-  <%= @jet.description %>
+  <%= simple_format(@jet.description) %>
 </p>
 
+<form action="http://vanceengles.com">
+    <input type="submit" value="Make Offer">
+</form>
 
-<%= link_to 'Edit', edit_jet_path(@jet) %> |
 <%= link_to 'Back', jets_path %>
-<%= link_to 'Destroy', jet, method: :delete, data: { confirm: 'Are you sure?' } %>
 
