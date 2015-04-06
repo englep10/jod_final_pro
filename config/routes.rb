@@ -4,11 +4,16 @@ Myapp::Application.routes.draw do
 
   get "home/index"
   get "home/minor"
+  #get "devise/sessions#destroy"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-root to: 'home#index'
+
+  authenticated :user do
+    root 'jets#index', as: 'authenticated_root'
+  end
+  root to: 'home#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

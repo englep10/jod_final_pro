@@ -1,4 +1,4 @@
-<h1>Listing jets</h1>
+<h1>All Jets For Sale</h1>
 
 <table>
   <thead>
@@ -19,16 +19,13 @@
   <tbody>
     <% @jets.each do |jet| %>
       <tr>
-        <td><%= jet.title %></td>
+        <td><%= link_to jet.title, jet %></td>
         <td><%= jet.make %></td>
         <td><%= jet.jet_model %></td>
         <td><%= jet.serial_number %></td>
         <td><%= jet.year %></td>
         <td><%= jet.price %></td>
         <td><%= jet.description %></td>
-        <td><%= link_to 'Show', jet %></td>
-        <td><%= link_to 'Edit', edit_jet_path(jet) %></td>
-        <td><%= link_to 'Destroy', jet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

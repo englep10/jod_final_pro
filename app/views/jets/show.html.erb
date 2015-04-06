@@ -35,5 +35,8 @@
   <%= @jet.description %>
 </p>
 
+
 <%= link_to 'Edit', edit_jet_path(@jet) %> |
 <%= link_to 'Back', jets_path %>
+<%= link_to 'Destroy', jet, method: :delete, data: { confirm: 'Are you sure?' } %>
+
